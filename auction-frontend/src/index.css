@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  /* Font Colors */
+  --background_color: white;
+  --font-title-color: red;
+  --font-grey-color:grey;
+  --font-black-color: black;
+  --hover-color: rgb(236, 137, 137);
+
+  /* Font Sizes */
+--paragraph-size: 14px;
+--title-size: 30px;
+--Subtitle-size: 20px;
+
+}
