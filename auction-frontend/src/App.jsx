@@ -1,20 +1,30 @@
-import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
-import './App.css'
 import {
-  createBrowserRouter,
-  RouterProvider,
-  Route,
   Outlet,
-  Link,
+  RouterProvider,
+  createBrowserRouter
 } from "react-router-dom";
+import './App.css';
 
-import Header from './client-component/client_header'
-import Footer from './client-component/client_footer'
-import LandingAuction from './pages/landingpage/auction'
-import ErrorPage from './pages/error'
+//These are the public components
+import Footer from './client-component/client_footer';
+import Header from './client-component/client_header';
+import ErrorPage from './pages/error';
 
+//These are public/landing page view
+import LandingAuction from './pages/landingpage/auction';
+import LandingCategories from './pages/landingpage/categories';
+import LandingContact from './pages/landingpage/contact';
+import LandingPastSales from './pages/landingpage/past_sales';
+
+// These are current user view-User Dashboard
+
+
+//These are current admin user view- Admin Dashboard
+
+
+//Content for External view/user landing page
 const DashboardLanding = () =>{
   return<div>
     <Header />
@@ -33,6 +43,21 @@ const router =createBrowserRouter ([
     {
       path: "/",
       element: <LandingAuction />
+    },
+
+    {
+      path: "/past-sales",
+      element: <LandingPastSales />
+    },
+
+    {
+      path: "/categories",
+      element: <LandingCategories />
+    },
+
+    {
+      path: "/contact",
+      element: <LandingContact />
     }
 
   ]
@@ -43,6 +68,8 @@ const router =createBrowserRouter ([
   element: <ErrorPage />
 }
 
+//will create path/routing for user Dashboard
+//create also children for user dashoard if possible
 
 ]);
 

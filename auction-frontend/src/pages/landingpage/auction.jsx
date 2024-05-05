@@ -1,4 +1,4 @@
-import React, {useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 
 function App() {
   const [data, setData] = useState([])
@@ -10,6 +10,9 @@ function App() {
   }, [])
   return(
   <div style={{padding: "100px", textAlign: "center"}}>
+
+    <h1>This is the Landing Page!!!</h1>
+    <br />
     <table style={{padding: "50px", color: "green", textAlign: "center"}}> 
       <thead>
         <th>ID</th>
@@ -27,11 +30,11 @@ function App() {
       <tbody>
         {data.map((d, i)=> (
           <tr key={i}>
-             <td>{d.user_id}</td>
-             <td>{d.ckyc_id}</td>
+             <td>{d.id}</td>
+             <td>{d.ckyc}</td>
              <td>{d.first_name}</td>
              <td>{d.middle_name}</td>
-             <td>{d.lastname}</td>
+             <td>{d.last_name}</td>
              <td>{d.suffix}</td>
              <td>{d.email_address}</td>
              <td>{d.mobile_number}</td>

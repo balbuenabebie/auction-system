@@ -9,7 +9,7 @@ const db = mysql.createConnection({
 host: "localhost",
 user: 'root',
 password:'',
-database: 'auction_data'
+database: 'ml_autcion'
 })
 
 app.get('/', (re, res)=> {
