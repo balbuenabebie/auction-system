@@ -4,7 +4,7 @@ function client_footer() {
   return (
     <div>
               <hr />
-      <h3>This is the Footer of the Auction Website!! Please Make a great dersign for me!</h3>
+      <h3>This is the Footer of the Auction Website!! Please Make a great design for me!</h3>
     </div>
   )
 }
