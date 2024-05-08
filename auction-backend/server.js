@@ -6,9 +6,9 @@ const app = express()
 app.use(cors())
 
 const db = mysql.createConnection({
-host: "localhost",
-user: 'root',
-password:'',
+host: "10.4.9.37",
+user: 'dev-auctionusr',
+password:'#CM+PaH6cEuWVt@D',
 database: 'ml_auction'
 })
 
