@@ -207,10 +207,7 @@ const router =createBrowserRouter ([
       element: <Login />,
     },
 
-    {
-      path: "/admin-login",
-      element: <Login />,
-    },
+    
 
 
   ]
